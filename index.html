@@ -208,26 +208,10 @@
 
         /* Download Section */
         .download-section {
-            margin-top: 20px;
+            margin-top: 25px;
             padding-top: 20px;
             border-top: 1px solid #2a4c7a;
-        }
-
-        .download-btn {
-            display: inline-block;
-            background: #1e3a5f;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .download-btn:hover {
-            background: #4aff9e;
-            color: #0a0f1e;
+            text-align: center;
         }
     </style>
 </head>
@@ -279,12 +263,19 @@
 
                 <button class="launch-btn" onclick="launchGame()">🚀 LAUNCH GAME</button>
 
-                <!-- Download Section -->
+                <!-- DOWNLOAD SECTION (your button) -->
                 <div class="download-section">
-                    <a href="#" id="downloadLauncherLink" class="download-btn" download>📥 Download Launcher (ZIP)</a>
-                    <p style="font-size: 0.7rem; color: #556688; margin-top: 10px;">
-                        Instructions: Download, extract, then keep launcher in the same folder as game files.
-                    </p>
+                    <div style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px;">
+                        <h2 style="color: #4aff9e; margin-bottom: 10px;">Eaglercraft Launcher Plus</h2>
+                        <p style="color: #88aacc; margin-bottom: 20px;">Click the button below to download the offline client.</p>
+                        
+                        <a href="https://drive.google.com/uc?export=download&id=1ucGSzFP6XQeJEh9WcA3GiDhBd_-eFnpj" 
+                           style="display: inline-block; background-color: #2e7d32; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s, background-color 0.2s;"
+                           onmouseover="this.style.backgroundColor='#1b5e20'; this.style.transform='scale(1.05)';"
+                           onmouseout="this.style.backgroundColor='#2e7d32'; this.style.transform='scale(1)';">
+                            📥 Download Eaglercraft Launcher Plus
+                        </a>
+                    </div>
                 </div>
 
                 <div class="footer">
@@ -370,11 +361,6 @@
             if (rank === 'Admin') rankBadge.classList.add('rank-admin');
             if (rank === 'VIP') rankBadge.classList.add('rank-vip');
         }
-
-        // Set download link (you'll need to replace this with your actual ZIP file URL)
-        // Upload your launcher ZIP to Google Drive or GitHub, then put the link here
-        // For now, it's a placeholder
-        document.getElementById('downloadLauncherLink').href = 'https://drive.google.com/uc?export=download&id=1ucGSzFP6XQeJEh9WcA3GiDhBd_-eFnpj';
 
         // Auth state listener
         auth.onAuthStateChanged(async user => {
