@@ -192,6 +192,16 @@
             transform: scale(1.05);
         }
 
+        /* Custom Section Style */
+        .custom-download-section {
+            background: #0f1422;
+            border: 2px solid #2e7d32;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
         .footer {
             text-align: center;
             color: #556688;
@@ -205,7 +215,6 @@
 <body>
 
 <div class="container">
-    <!-- Banner -->
     <div class="banner" id="gamerzBanner">
         <div class="banner-text">
             🔥 Check out <a href="https://the-gamerz-os.github.io/The_GamerZ-OS/" target="_blank">GAMERZ OS</a> — a full web desktop with apps, games, and more!
@@ -213,7 +222,6 @@
         <button class="close-btn" onclick="document.getElementById('gamerzBanner').style.display='none'">✖</button>
     </div>
 
-    <!-- Home Text -->
     <div class="home-text">
         Welcome to google sites eaglercraft launcher (<a href="https://sites.google.com/view/eaglercraftlauncherplus?usp=sharing" target="_blank">https://sites.google.com/view/eaglercraftlauncherplus?usp=sharing</a>) this is on a google sites because its easy and really lazy a will release a GitHub version soon, one thing is that i don't own eaglercraft the game belongs to lax1dude. but this website has over 5 different versions with more being added soon the downloadable files aren't viruses and do not come with anything other than the game.
     </div>
@@ -221,9 +229,7 @@
     <h1>🎮 Eaglercraft Launcher</h1>
     <div class="subtitle">Click any version to download — works offline, just double-click to play</div>
 
-    <!-- Version Grid -->
     <div class="version-grid">
-        <!-- 1.12.2 -->
         <div class="version-card" onclick="window.open('game_1.12.html', '_blank')">
             <div class="version-icon">🐉</div>
             <div class="version-name">1.12.2</div>
@@ -231,7 +237,6 @@
             <button class="download-btn">📥 Download</button>
         </div>
 
-        <!-- 1.8.8 -->
         <div class="version-card" onclick="window.open('game_1.8.html', '_blank')">
             <div class="version-icon">⚔️</div>
             <div class="version-name">1.8.8</div>
@@ -239,7 +244,6 @@
             <button class="download-btn">📥 Download</button>
         </div>
 
-        <!-- 1.5.2 -->
         <div class="version-card" onclick="window.open('game_1.5.html', '_blank')">
             <div class="version-icon">🏰</div>
             <div class="version-name">1.5.2</div>
@@ -247,7 +251,6 @@
             <button class="download-btn">📥 Download</button>
         </div>
 
-        <!-- Beta -->
         <div class="version-card" onclick="window.open('game_beta.html', '_blank')">
             <div class="version-icon">🌙</div>
             <div class="version-name">Beta</div>
@@ -255,7 +258,6 @@
             <button class="download-btn">📥 Download</button>
         </div>
 
-        <!-- Alpha -->
         <div class="version-card" onclick="window.open('game_alpha.html', '_blank')">
             <div class="version-icon">✨</div>
             <div class="version-name">Alpha</div>
@@ -263,7 +265,6 @@
             <button class="download-btn">📥 Download</button>
         </div>
 
-        <!-- Indev -->
         <div class="version-card" onclick="window.open('game_indev.html', '_blank')">
             <div class="version-icon">🔥</div>
             <div class="version-name">Indev</div>
@@ -272,7 +273,6 @@
         </div>
     </div>
 
-    <!-- Launcher Download Section (Your Button) -->
     <div class="launcher-download-section">
         <h3>🚀 Eaglercraft Launcher Plus</h3>
         <p>Download the complete launcher with all versions included!</p>
@@ -280,13 +280,27 @@
         <a href="https://drive.google.com/uc?export=download&id=1ucGSzFP6XQeJEh9WcA3GiDhBd_-eFnpj" 
            class="launcher-dl-btn"
            onmouseover="this.style.backgroundColor='#1b5e20'; this.style.transform='scale(1.05)';"
-           onmouseout="this.style.backgroundColor='#2e7d32'; this.style.transform='scale(1)';">
+           onmouseout="this.style.backgroundColor='#2e7d32'; this.style.transform='scale(1)';"
+        >
             📥 Download Eaglercraft Launcher Plus
         </a>
         
         <p style="font-size: 0.7rem; color: #556688; margin-top: 15px;">
             Instructions: Download, extract, keep all files in the same folder, then open launcher.html
         </p>
+    </div>
+
+    <div class="custom-download-section">
+        <h2 style="color: #4aff9e; font-size: 1.3rem; margin-bottom: 10px;">Eaglercraft Custom Launchers</h2>
+        <p style="color: #88aacc; margin-bottom: 20px; font-size: 0.85rem;">Click the button below to download</p>
+        
+        <a href="https://drive.google.com/uc?export=download&id=1OFDRctryiuEmogFgv8ECfJPHn61VFBsP" 
+           class="launcher-dl-btn"
+           onmouseover="this.style.backgroundColor='#1b5e20'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#2e7d32'; this.style.transform='scale(1)';"
+        >
+            📥 Download Eaglercraft Custom Launchers
+        </a>
     </div>
 
     <div class="footer">
