@@ -192,6 +192,46 @@
             transform: scale(1.05);
         }
 
+        /* Launcher 2.0 Download Section (NEW - placed above others) */
+        .launcher2-section {
+            background: #0f1422;
+            border: 2px solid #4aff9e;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .launcher2-section h3 {
+            color: #4aff9e;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .launcher2-section p {
+            color: #88aacc;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .launcher2-btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s;
+            font-size: 1rem;
+        }
+
+        .launcher2-btn:hover {
+            background-color: #1b5e20;
+            transform: scale(1.05);
+        }
+
         /* Launcher Download Section */
         .launcher-download-section {
             background: #0f1422;
@@ -313,7 +353,7 @@
         </div>
     </div>
 
-    <!-- NEW: Download every Eaglercraft version section -->
+    <!-- Download every Eaglercraft version section -->
     <div class="every-version-section">
         <h3>📦 Download Every Eaglercraft Version</h3>
         <p>Complete collection — includes 1.12.2, 1.8.8, 1.5.2, Beta, Alpha, Indev, and more!</p>
@@ -328,6 +368,24 @@
         
         <p style="font-size: 0.7rem; color: #556688; margin-top: 15px;">
             📁 Complete archive — all versions in one ZIP file
+        </p>
+    </div>
+
+    <!-- NEW: Eaglercraft Launcher Plus 2.0 (placed above other downloads) -->
+    <div class="launcher2-section">
+        <h3>🚀 Eaglercraft Launcher Plus 2.0</h3>
+        <p>Download the latest offline client with all versions included!</p>
+        
+        <a href="https://drive.google.com/uc?export=download&id=1jLvYYNOAfzRJjk1Icyn76LY-vCXgEuzS" 
+           class="launcher2-btn"
+           onmouseover="this.style.backgroundColor='#1b5e20'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#2e7d32'; this.style.transform='scale(1)';"
+        >
+            📥 Download Eaglercraft Launcher Plus 2.0
+        </a>
+        
+        <p style="font-size: 0.7rem; color: #556688; margin-top: 15px;">
+            💾 The all-in-one launcher — extract and play
         </p>
     </div>
 
