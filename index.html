@@ -152,6 +152,46 @@
             transform: scale(1.02);
         }
 
+        /* Every Version Download Section */
+        .every-version-section {
+            background: #0f1422;
+            border: 2px solid #ff9800;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        .every-version-section h3 {
+            color: #ff9800;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .every-version-section p {
+            color: #88aacc;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+        }
+
+        .every-version-btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(255,152,0,0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            font-size: 1rem;
+        }
+
+        .every-version-btn:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+
         /* Launcher Download Section */
         .launcher-download-section {
             background: #0f1422;
@@ -271,6 +311,24 @@
             <div class="version-desc">Indev • Where survival began</div>
             <button class="download-btn">📥 Download</button>
         </div>
+    </div>
+
+    <!-- NEW: Download every Eaglercraft version section -->
+    <div class="every-version-section">
+        <h3>📦 Download Every Eaglercraft Version</h3>
+        <p>Complete collection — includes 1.12.2, 1.8.8, 1.5.2, Beta, Alpha, Indev, and more!</p>
+        
+        <a href="https://drive.google.com/uc?export=download&id=16Tbk5S8KlvPCJ6g9XI1MOiuj8gary6Mk" 
+           class="every-version-btn"
+           onmouseover="this.style.backgroundColor='#e68900'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#ff9800'; this.style.transform='scale(1)';"
+        >
+            📥 Download Every Eaglercraft Version
+        </a>
+        
+        <p style="font-size: 0.7rem; color: #556688; margin-top: 15px;">
+            📁 Complete archive — all versions in one ZIP file
+        </p>
     </div>
 
     <div class="launcher-download-section">
